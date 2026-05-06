@@ -1,7 +1,7 @@
 # Spotify Music Clustering
 
 <p align="center">
-  <img src="images/spotify_music_clustering_banner.png" alt="Spotify Music Clustering" width="850">
+   <img src="https://github.com/user-attachments/assets/92b2a52d-aad9-4cc3-933e-997646f47114" alt="Géneros dominantes por clúster" width="850">
 </p>
 
 ## Descripción del proyecto
@@ -98,27 +98,17 @@ La variable `track_genre` no fue utilizada para entrenar el modelo. Se utilizó 
 ### Método del codo
 
 <p align="center">
-  <img src="images/elbow_method.png" alt="Método del codo" width="750">
+  <img src="https://github.com/user-attachments/assets/4422e47b-185e-4614-9c0c-7e8064e0c05a" alt="Método del codo" width="750">
 </p>
 
 El método del codo fue utilizado para observar cómo disminuye la inercia a medida que aumenta el número de clústeres. Esta visualización ayuda a seleccionar una cantidad razonable de grupos para el modelo K-Means.
 
 ---
 
-### Evaluación con Silhouette Score
-
-<p align="center">
-  <img src="images/silhouette_score.png" alt="Silhouette Score" width="750">
-</p>
-
-El Silhouette Score permitió evaluar qué tan bien separados se encontraban los clústeres. Esta métrica fue utilizada como complemento al método del codo.
-
----
-
 ### Visualización de clústeres con PCA
 
 <p align="center">
-  <img src="images/pca_clusters.png" alt="Clusters visualizados con PCA" width="750">
+  <img src="https://github.com/user-attachments/assets/5dfec910-719d-440f-942f-28878a7b8c17" alt="Clusters visualizados con PCA" width="750">
 </p>
 
 PCA permitió reducir las variables originales a dos componentes principales para representar visualmente los clústeres en un espacio bidimensional.
@@ -128,7 +118,7 @@ PCA permitió reducir las variables originales a dos componentes principales par
 ### Visualización de clústeres con t-SNE
 
 <p align="center">
-  <img src="images/tsne_clusters.png" alt="Clusters visualizados con t-SNE" width="750">
+  <img src="https://github.com/user-attachments/assets/b4412f3f-7b96-4fc5-8579-1118ea48285f"" alt="Clusters visualizados con t-SNE" width="750">
 </p>
 
 t-SNE fue utilizado como técnica de reducción dimensional no lineal para explorar la separación visual de los grupos musicales.
@@ -138,7 +128,7 @@ t-SNE fue utilizado como técnica de reducción dimensional no lineal para explo
 ### Perfil promedio por clúster
 
 <p align="center">
-  <img src="images/cluster_profile_heatmap.png" alt="Heatmap del perfil promedio por clúster" width="850">
+  <img src="https://github.com/user-attachments/assets/b0b87ae0-6c87-42ce-b13d-5db73b2246bf" alt="Heatmap del perfil promedio por clúster" width="850">
 </p>
 
 El heatmap muestra el perfil promedio estandarizado de cada clúster. Esta visualización permitió interpretar las principales diferencias entre los grupos según sus características de audio.
@@ -148,7 +138,7 @@ El heatmap muestra el perfil promedio estandarizado de cada clúster. Esta visua
 ### Géneros dominantes por clúster
 
 <p align="center">
-  <img src="images/top_genres_by_cluster.png" alt="Géneros dominantes por clúster" width="850">
+  <img src="https://github.com/user-attachments/assets/92b2a52d-aad9-4cc3-933e-997646f47114" alt="Géneros dominantes por clúster" width="850">
 </p>
 
 Este gráfico muestra los géneros más frecuentes dentro de cada clúster. Aunque el género no fue utilizado para entrenar el modelo, permitió validar e interpretar musicalmente los grupos encontrados.
@@ -158,7 +148,7 @@ Este gráfico muestra los géneros más frecuentes dentro de cada clúster. Aunq
 ### Canciones más populares por clúster
 
 <p align="center">
-  <img src="images/top_tracks_by_cluster.png" alt="Canciones más populares por clúster" width="850">
+  <img src="https://github.com/user-attachments/assets/fd9e70ee-4b5e-4634-85c0-5d602294f776" alt="Canciones más populares por clúster" width="850">
 </p>
 
 Esta tabla permite observar las canciones más populares dentro de cada perfil musical identificado por el modelo.
@@ -168,7 +158,7 @@ Esta tabla permite observar las canciones más populares dentro de cada perfil m
 ### Distribución de canciones por clúster
 
 <p align="center">
-  <img src="images/cluster_size.png" alt="Distribución de canciones por clúster" width="750">
+  <img src="https://github.com/user-attachments/assets/57ef4334-d034-41b4-8d7c-05973d6a936e" alt="Distribución de canciones por clúster" width="750">
 </p>
 
 Esta visualización permite revisar cuántas canciones fueron asignadas a cada clúster, ayudando a evaluar la distribución de los grupos obtenidos.
@@ -178,8 +168,9 @@ Esta visualización permite revisar cuántas canciones fueron asignadas a cada c
 ### Radar chart por clúster
 
 <p align="center">
-  <img src="images/radar_clusters.png" alt="Radar chart por clúster" width="850">
+  <img src="https://github.com/user-attachments/assets/6cb63478-f8b1-4838-9db2-c7e84fca5830" alt="Radar chart por clúster" width="850">
 </p>
+
 
 El radar chart resume las características musicales promedio de cada clúster, facilitando la comparación visual entre perfiles.
 
@@ -201,11 +192,8 @@ El modelo permitió identificar cuatro perfiles musicales principales:
 ## Interpretación general
 
 El análisis permitió observar que las canciones pueden agruparse en perfiles musicales coherentes usando únicamente características de audio.
-
 El clúster bailable y positivo agrupa canciones con mayor `danceability` y `valence`, mientras que el clúster intenso presenta valores elevados de `energy`, `loudness` y `tempo`.
-
 Por otro lado, el clúster asociado a contenido en vivo o vocal destaca por valores altos de `liveness` y `speechiness`. Finalmente, el clúster acústico y ambiental presenta mayor `acousticness` e `instrumentalness`, junto con menor energía y menor volumen.
-
 Estos resultados muestran que el aprendizaje no supervisado puede ser útil para explorar catálogos musicales, detectar patrones de audio y construir segmentaciones interpretables.
 
 ---
@@ -229,22 +217,17 @@ Este tipo de análisis podría utilizarse en:
 spotify-music-clustering/
 │
 ├── data/
-│   └── spotify_tracks.csv
+│   └── spotify_tracks_dataset_detailed.csv
 │
 ├── images/
-│   ├── spotify_music_clustering_banner.png
-│   ├── elbow_method.png
-│   ├── silhouette_score.png
+│   ├── generosdominantes_porcluster.png
+│   ├── Heatmap_perfilpor_cluster.png
+│   ├── radar_chart_cluster.png
 │   ├── pca_clusters.png
 │   ├── tsne_clusters.png
-│   ├── cluster_profile_heatmap.png
-│   ├── top_genres_by_cluster.png
 │   ├── top_tracks_by_cluster.png
-│   ├── cluster_size.png
-│   └── radar_clusters.png
 │
 ├── notebook/
 │   └── spotify_music_clustering.ipynb
 │
-├── README.md
 └── requirements.txt
